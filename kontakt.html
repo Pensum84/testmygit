@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="SV">
+<head>
+    <script src="https://kit.fontawesome.com/80f9c42121.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Grandstander:ital,wght@1,100&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+
+    <!--- Navbar -->
+
+    <nav class="navbar">
+        <a href="index.html" class="logo">
+            <img src="Bilder/star.png" alt="stjärna">Beckisentertainment
+        </a>
+        <ul class="nav-links">
+            <li class="nav-item"><a href="index.html">Hem</a></li>
+            <li class="nav-item"><a href="ommig.html">Om Mig</a></li>
+            <li class="nav-item"><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+    </nav>
+
+    <!-- Jumbotron -->
+
+    <div class="jumbo-image">
+        <div class="jumbo-text">
+          <h1>Mångsysslaren i Beckomberga</h1>
+          <p>Skådespelare, Modell och Artist!</p>
+        </div>
+      </div>
+
+    <!--- Header -->
+
+    <header>
+        <h1 id="my_header">Kontakta Mig</h1>
+    </header>
+
+    <section class="welcome">
+        <h3>Här kan du skicka mig ett meddelande om du skulle vilja boka mig får något spännande uppdrag!</h3>
+    </section>
+
+    <!--- Formulär -->
+    <form id="form"  action="#">
+        <div class="form-box">
+            <label for="fname">Förnamn</label>
+            <input type="text" id="fname" name="fname" placeholder="Förnamn">
+        </div>
+        <div class="form-box">
+            <label for="lname">Efternamn</label>
+            <input type="text" id="lname" name="lname" placeholder="Efternamn">
+        </div>
+        <div class="form-box">
+            <label for="email">Mailadress</label>
+            <input type="email" id="email" name="email" placeholder="Mailadress">
+        </div>
+        <div class="form-box">
+            <label for="message">Meddelande</label>
+            <input type="text" id="message" name="message">
+        </div>
+        <div class="check">
+            <input type="checkbox" id="agreement" name="agreement" value="agreement">
+            <label for="agreement"> Jag har fyllt i alla fält.</label>
+        </div>
+        <div class="form-box">
+            <button type="submit" id="btnsend">Skicka</button>
+        </div>
+
+    </form>
+
+    <!--- Footer -->
+    <footer>
+        <a href="https://www.instagram.com/beckisentertainment/" class="fab fa-instagram" ></a>
+      
+        <p>&copy; Beckisentertainment</p>
+
+    </footer>
+</body>
+</html>

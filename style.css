@@ -1,4 +1,299 @@
-.title{
-    font-size: larger;
-    color: purple;
+html {
+    box-sizing: border-box;
+  }
+  
+  *, *::before, *::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Grandstander', cursive;
+  }
+  
+  @media screen and (max-width: 740px) {
+    .navbar {
+      flex-direction: column;
+    
+    }
+  }
+
+  /* Navbar css */
+  .navbar {
+    display: flex;
+    background-image: linear-gradient(rgba(241, 238, 245, 0.795), rgba(245, 238, 243, 0.753)), url(Bilder/pink2.jpg);
+    width: 100%;
+    padding-left: 30px;
+    padding-right: 10px;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    padding-right: 3%;
+    text-transform: uppercase;
+    justify-content: flex-end;
+  }
+  
+  .nav-item a {
+    padding: 10px 15px;
+    text-decoration: none;
+    color: rgb(235, 229, 229);
+    text-shadow: 1px 1px #888080d8;
+    letter-spacing: 3px;
+    font-size: large;
+  }
+  
+  .nav-item:hover {
+    background-color: white;
+    color: rgba(96, 97, 96, 0.856);
+  }
+  
+  .logo img {
+    display: flex;
+    max-width: 25%;
+    vertical-align: middle;
+  }
+.logo {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  max-width: 45%;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: white;
+  text-decoration: none;
+  text-shadow: 1px 2px #646262af;
+  font-size: xx-large;
+  letter-spacing: 3px;
+}
+.logo:hover{
+  color: rgba(226, 223, 225, 0.856);
+}
+
+#my_header{
+  display: flex;
+  justify-content: center;
+  padding: 1% 1%;
+  margin-top: 30px;
+}
+.welcome{
+  display: flex;
+  margin-bottom: 15px;
+  flex-direction: column;
+}
+.welcome p{
+  display: flex;
+  margin-top: 20px;
+  justify-content: center;
+}
+
+.welcome h3{
+  display: flex;
+  justify-content: center;
+}
+/* Bild galleriet thumbnails */
+section{
+  text-align: center;
+  padding-top: 3%;
+}
+.row{
+  margin: 2% 2%;
+}
+.row a{
+  text-decoration: none;
+}
+.row2{
+  margin: 2% 2%;
+}
+.row2 a{
+  text-decoration: none;
+}
+.row img{
+  border: 1px solid rgb(241, 237, 237);
+  border-radius: 4px;
+  padding: 10px;
+  width: 27%;
+  margin: 10px 10px;
+}
+
+/* Hover effekt på thumbsen */
+.row2 img:hover {
+  box-shadow: 0 0 2px 1px rgba(237, 105, 241, 0.514);
+}
+
+.row2 img{
+  border: 1px solid rgb(241, 237, 237);
+  border-radius: 4px;
+  padding: 10px;
+  width: 27%;
+}
+
+/* Hover effekt på thumbsen */
+.row img:hover {
+  box-shadow: 0 0 2px 1px rgba(237, 105, 241, 0.514);
+}
+body, html {
+  height: 100%;
+}
+
+/* Jumbobilden */
+.jumbo-image {
+/* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+background-image: linear-gradient(rgba(229, 199, 247, 0.603), rgba(247, 201, 238, 0.459)), url("Bilder/rosaberg.jpg");
+
+/* Sätter en specifik höjd */
+height: 50%;
+
+/* Positionering för jumbon */
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+position: relative;
+}
+
+/* Placerar texten i mitten av bilden */
+.jumbo-text {
+letter-spacing: 1px;
+text-align: center;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+color: white;
+}
+.jumbobtn{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: small;
+  width: 40%;
+  padding: 4px 4px;
+  color: rgb(85, 83, 85);
+  background-color:#eddaf8;
+  border-radius: 5px;
+  border: 3px rgba(94, 93, 93, 0.76);
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  text-decoration: none;
+}
+.jumbobtn:hover{
+  color: rgb(48, 47, 47);
+  background-color: rgb(207, 200, 214);
+}
+.jumbobtn:active {
+  background-color: rgb(207, 200, 214);
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+  text-decoration: none;
+}
+
+/* Footer */
+.fab{ 
+  color: #8a3ab9;
+  padding: 10px;
+ 
+}
+footer .fab{
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+}
+
+footer p{
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+  padding-bottom: 25px;
+  text-transform: uppercase;
+  text-shadow: 1px 1px rgb(68, 67, 67);
+  color: rgb(247, 243, 243);
+}
+footer{
+  display: flex;
+  flex-direction: column;
+  background-color: #d8aff0;
+  padding: 40px 40px;
+}
+
+/* Forms CSS */
+.form-box{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 10%;
+  padding: 5px 5px;
+  margin-top: 8px;
+  letter-spacing: 3px;
+}
+.check{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  border-radius: 10%;
+  padding: 5px 5px;
+  letter-spacing: 1px;
+  margin-top: 20px;
+}
+#btnsend{
+    width: 15%;
+    padding: 3px 3px;
+    color: rgb(112, 110, 110);
+    background-color: #f6f0f7;
+    border-radius: 5px;
+    border: 2px rgba(114, 112, 112, 0.76);
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    margin-bottom: 30px;
+    margin-top: 20px;
+    letter-spacing: 3px;
+}
+#btnsend:hover{
+  color: rgb(48, 47, 47);
+  background-color: rgb(207, 200, 214);
+}
+
+.jumbo-image h1{
+  margin-bottom: 8px;
+}
+
+#message{
+  width: 30%;
+  height: 70%;
+  height: 80px;
+  margin-bottom: 5px;
+
+}
+.check label{
+  margin-left: 10px;
+}
+
+/*Om Mig*/
+.column{
+  display: flex;
+  margin-bottom: 5%;
+  flex-direction: row;
+  justify-content: center;
+}
+.column1{
+  display: flex;
+  max-width: 40%;
+  border: solid 5px rgb(245, 215, 248);
+  margin-right: 2%;
+  padding: 15px;
+  border-radius: 10%;
+  box-shadow: 5px 5px 4px 5px #88778a;
+}
+.column2{
+  display: flex;
+  max-width: 40%;
+  border: solid 5px rgb(245, 215, 248);
+  padding: 15px;
+  border-radius: 10%;
+  box-shadow: 5px 5px 4px 5px #88778a;
+}
+.capletter{
+  font-size: xx-large;
 }
