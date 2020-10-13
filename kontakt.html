@@ -44,7 +44,7 @@
     </section>
 
     <!--- Formulär -->
-    <form id="form"  action="#">
+    <form id="form"  onsubmit="return validationForm()">
         <div class="form-box">
             <label for="fname">Förnamn</label>
             <input type="text" id="fname" name="fname" placeholder="Förnamn">
@@ -65,6 +65,7 @@
             <input type="checkbox" id="agreement" name="agreement" value="agreement">
             <label for="agreement"> Jag har fyllt i alla fält.</label>
         </div>
+        <div id="error_message"></div>
         <div class="form-box">
             <button type="submit" id="btnsend">Skicka</button>
         </div>
@@ -73,7 +74,7 @@
 
     <!--- Footer -->
     <footer>
-        <a href="https://www.instagram.com/beckisentertainment/" class="fab fa-instagram" ></a>
+        <a target="_blank" href="https://www.instagram.com/beckisentertainment/" class="fab fa-instagram" ></a>
       
         <p>&copy; Beckisentertainment</p>
 

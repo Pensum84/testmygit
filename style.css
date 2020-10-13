@@ -297,3 +297,9 @@ footer{
 .capletter{
   font-size: xx-large;
 }
+#error_message{
+  text-align: center;
+  color: red;
+  font-size: small;
+  font-style: italic;
+}
